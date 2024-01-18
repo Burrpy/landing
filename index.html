@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Burrpy - Coming Soon</title>
+    <link rel="icon" href="logo500x500.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/reefjs@13/dist/reef.min.js"></script>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        min-height: 100%;
+        font-family: "Poppins", sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+        max-width: 1200px;
+        box-shadow: 0 4px 8px 0 rgb(4, 128, 150, 0.5);
+        padding: 40px;
+        background: white;
+        border-radius: 15px;
+        margin-top: 20px; /* Add space between the container and the footer */
+      }
+
+      .left-side,
+      .right-side {
+        flex: 1;
+      }
+
+      .right-side {
+        text-align: left;
+      }
+
+      .logo {
+        max-width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+      }
+
+      .left-side h1 {
+        font-size: 2.5em;
+        color: #048096;
+        margin: 0;
+        font-weight: 700;
+      }
+
+      .right-side h1 {
+        font-size: 2.5em;
+        color: #048096;
+        margin: 0;
+        font-weight: 700;
+      }
+
+      .right-side h2 {
+        font-size: 3em;
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      .right-side p {
+        font-size: 1em;
+        color: #666;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+          padding: 20px;
+        }
+
+        .left-side,
+        .right-side {
+          margin-bottom: 20px;
+          text-align: center;
+        }
+      }
+
+      footer {
+        width: 80%;
+        max-width: 1200px;
+        box-shadow: 0 4px 8px 0 rgb(4, 128, 150, 0.5);
+        padding: 20px 40px;
+        background: white;
+        border-radius: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: grid;
+        grid-template-columns: repeat(
+          4,
+          1fr
+        ); /* Adjust the number of columns as needed */
+        justify-items: center;
+        gap: 20px;
+        text-align: center;
+      }
+
+      footer ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: contents; /* Make the list items align with the grid */
+      }
+
+      footer a {
+        color: #048096;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      footer a:hover {
+        color: #333;
+      }
+
+      @media (max-width: 768px) {
+        footer {
+          grid-template-columns: repeat(
+            2,
+            1fr
+          ); /* Adjust for smaller screens */
+          gap: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-side">
+        <img src="logo2000x2000.png" alt="Burrpy Logo" class="logo" />
+      </div>
+      <div class="right-side">
+        <h1>Coming Soon</h1>
+        <p>The Best Home Cooked Meals at Your Doorstep</p>
+      </div>
+    </div>
+    <footer>
+      <ul>
+        <li><a href="#">Footer Link 1</a></li>
+        <li><a href="#">Footer Link 2</a></li>
+        <li><a href="#">Footer Link 3</a></li>
+        <li><a href="#">Footer Link 4</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
