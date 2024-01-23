@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Burrpy - Coming Soon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="logo500x500.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
@@ -11,7 +12,7 @@
     <style>
       body,
       html {
-        margin: 0;
+        margin: auto;
         padding: 0;
         min-height: 100%;
         font-family: "Poppins", sans-serif;
@@ -25,16 +26,21 @@
       }
 
       .container {
+        max-width: 1200px;
+        width: 80%;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        width: 80%;
-        max-width: 1200px;
         box-shadow: 0 4px 8px 0 rgb(4, 128, 150, 0.5);
         padding: 40px;
         background: white;
         border-radius: 15px;
         margin-top: 20px; /* Add space between the container and the footer */
+      }
+
+      .blue-text {
+        color: #048096;
+        font-weight: 700;
       }
 
       .left-side,
@@ -77,10 +83,65 @@
         color: #666;
       }
 
+      footer {
+        max-width: 1200px;
+        width: 80%;
+        box-shadow: 0 4px 8px 0 rgb(4, 128, 150, 0.5);
+        padding: 20px 40px;
+        background: white;
+        border-radius: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        justify-items: center;
+        gap: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      footer ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-end;
+        height: fit-content;
+      }
+
+      footer li {
+        padding: 5px;
+        margin: 0;
+        height: fit-content;
+        text-align: center;
+        width: 100%;
+      }
+
+      footer a {
+        color: #048096;
+        text-decoration: none;
+        transition: 1s ease-in-out;
+      }
+
+      footer .address {
+        margin-top: 1%;
+        text-align: left;
+        width: 40%;
+      }
+
+      footer a:hover {
+        color: #048096;
+        text-decoration: underline;
+      }
+
       @media (max-width: 768px) {
         .container {
           flex-direction: column;
           padding: 20px;
+          width: 100%;
+          max-width: 90vw;
         }
 
         .left-side,
@@ -88,51 +149,24 @@
           margin-bottom: 20px;
           text-align: center;
         }
-      }
 
-      footer {
-        width: 80%;
-        max-width: 1200px;
-        box-shadow: 0 4px 8px 0 rgb(4, 128, 150, 0.5);
-        padding: 20px 40px;
-        background: white;
-        border-radius: 15px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        display: grid;
-        grid-template-columns: repeat(
-          4,
-          1fr
-        ); /* Adjust the number of columns as needed */
-        justify-items: center;
-        gap: 20px;
-        text-align: center;
-      }
-
-      footer ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        display: contents; /* Make the list items align with the grid */
-      }
-
-      footer a {
-        color: #048096;
-        text-decoration: none;
-        transition: color 0.3s ease;
-      }
-
-      footer a:hover {
-        color: #333;
-      }
-
-      @media (max-width: 768px) {
         footer {
-          grid-template-columns: repeat(
-            2,
-            1fr
-          ); /* Adjust for smaller screens */
-          gap: 10px;
+          width: 100%;
+          max-width: 80vw;
+        }
+      }
+
+      @media (max-width: 400px) {
+        footer {
+          flex-direction: column-reverse;
+        }
+
+        footer .address{
+          width: 100%;
+        }
+
+        footer ul{
+          width: 100%;
         }
       }
     </style>
@@ -148,11 +182,13 @@
       </div>
     </div>
     <footer>
+      <p class="address">
+        <span class="blue-text">Address: <br /></span>26, Central Road,
+        <br />Jadavpur, <br />Kolkata - 700032
+      </p>
       <ul>
-        <li><a href="#">Footer Link 1</a></li>
-        <li><a href="#">Footer Link 2</a></li>
-        <li><a href="#">Footer Link 3</a></li>
-        <li><a href="#">Footer Link 4</a></li>
+        <li><a href="/tnc.html" target="_blank">Terms and Conditions</a></li>
+        <li><a href="/privacy-policy.html" target="_blank">Privacy Policy</a></li>
       </ul>
     </footer>
   </body>
