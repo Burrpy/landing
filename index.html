@@ -115,7 +115,7 @@
         padding: 5px;
         margin: 0;
         height: fit-content;
-        text-align: center;
+        text-align: left;
         width: 100%;
       }
 
@@ -151,8 +151,16 @@
         }
 
         footer {
-          width: 100%;
           max-width: 80vw;
+          flex-direction: column-reverse;
+        }
+
+        footer .address{
+          width: 100%;
+        }
+
+        footer ul{
+          width: 100%;
         }
       }
 
@@ -184,11 +192,15 @@
     <footer>
       <p class="address">
         <span class="blue-text">Address: <br /></span>26, Central Road,
-        <br />Jadavpur, <br />Kolkata - 700032
+        <br />Jadavpur, <br />Kolkata - 700032 <br />
+      </p>
+        <p class="address">
+        <span class="blue-text">Contact: <br /></span>+91 79801 20665<br />+91 79800 05728
       </p>
       <ul>
         <li><a href="/tnc.html" target="_blank">Terms and Conditions</a></li>
         <li><a href="/privacy-policy.html" target="_blank">Privacy Policy</a></li>
+        <li><a href="/pricing.html" target="_blank">Pricing</a></li>
       </ul>
     </footer>
   </body>
