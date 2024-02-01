@@ -93,7 +93,6 @@
         margin-top: 20px;
         margin-bottom: 20px;
         justify-items: center;
-        gap: 20px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -128,7 +127,10 @@
       footer .address {
         margin-top: 1%;
         text-align: left;
-        width: 40%;
+      }
+
+      .footer-section {
+        width: inherit;
       }
 
       footer a:hover {
@@ -190,16 +192,17 @@
       </div>
     </div>
     <footer>
-      <p class="address">
+      <p class="address footer-section">
         <span class="blue-text">Address: <br /></span>26, Central Road,
         <br />Jadavpur, <br />Kolkata - 700032 <br />
       </p>
-        <p class="address">
+        <p class="address footer-section">
         <span class="blue-text">Contact: <br /></span>+91 79801 20665<br />+91 79800 05728
       </p>
-      <ul>
+      <ul class="footer-section">
         <li><a href="/tnc.html" target="_blank">Terms and Conditions</a></li>
         <li><a href="/privacy-policy.html" target="_blank">Privacy Policy</a></li>
+        <li><a href="/refund-policy.html" target="_blank">Refund Policy</a></li>
         <li><a href="/pricing.html" target="_blank">Pricing</a></li>
       </ul>
     </footer>
