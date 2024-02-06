@@ -49,7 +49,9 @@
       }
 
       .right-side {
-        text-align: left;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
       }
 
       .logo {
@@ -70,6 +72,7 @@
         color: #048096;
         margin: 0;
         font-weight: 700;
+        text-align: left;
       }
 
       .right-side h2 {
@@ -81,6 +84,25 @@
       .right-side p {
         font-size: 1em;
         color: #666;
+        text-align: left;
+      }
+
+      .download-button {
+        color: #fff;
+        background-color: #048096;
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5em;
+        cursor: pointer;
+      }
+
+      .download-button img {
+        padding: 0 1em 0 0;
       }
 
       footer {
@@ -140,10 +162,18 @@
 
       @media (max-width: 768px) {
         .container {
-          flex-direction: column;
+          flex-direction: column-reverse;
           padding: 20px;
           width: 100%;
           max-width: 90vw;
+        }
+
+        .right-side h1 {
+          text-align: center;
+        }
+
+        .download-button {
+          width: 100%;
         }
 
         .left-side,
@@ -183,12 +213,15 @@
   </head>
   <body>
     <div class="container">
+      <div class="right-side">
+        <h1>We are live</h1>
+        <p>The Best Home Cooked Meals at Your Doorstep</p>
+        <form action="https://play.google.com/store/apps/details?id=com.burrpy.mobileApp">
+          <button type="submit" class="download-button"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQgMS43MzQwMUM0LjE3NTk3IDEuNzM0MTQgNC4zNDg3OSAxLjc4MDcxIDQuNTAxIDEuODY5MDFMMjAuNTA1IDExLjEzNUMyMC42NTY1IDExLjIyMjkgMjAuNzgyMyAxMS4zNDkxIDIwLjg2OTggMTEuNTAwOUMyMC45NTcyIDExLjY1MjcgMjEuMDAzMiAxMS44MjQ4IDIxLjAwMzIgMTJDMjEuMDAzMiAxMi4xNzUyIDIwLjk1NzIgMTIuMzQ3MyAyMC44Njk4IDEyLjQ5OTFDMjAuNzgyMyAxMi42NTA5IDIwLjY1NjUgMTIuNzc3MSAyMC41MDUgMTIuODY1TDQuNTAxIDIyLjEzMUM0LjM0OTAzIDIyLjIxOSA0LjE3NjU3IDIyLjI2NTQgNC4wMDA5OCAyMi4yNjU2QzMuODI1MzggMjIuMjY1NyAzLjY1Mjg0IDIyLjIxOTcgMy41MDA2OSAyMi4xMzJDMy4zNDg1NSAyMi4wNDQzIDMuMjIyMTggMjEuOTE4MSAzLjEzNDI5IDIxLjc2NjFDMy4wNDYzOSAyMS42MTQxIDMuMDAwMDggMjEuNDQxNiAzIDIxLjI2NlYyLjczNDAxQzMgMi40Njg3OSAzLjEwNTM2IDIuMjE0NDQgMy4yOTI4OSAyLjAyNjlDMy40ODA0MyAxLjgzOTM3IDMuNzM0NzggMS43MzQwMSA0IDEuNzM0MDFaTTEyLjI5MiAxMy40MTRMNy43OTQgMTcuOTEyTDEzLjQ5MyAxNC42MTNMMTIuMjkzIDEzLjQxM0wxMi4yOTIgMTMuNDE0Wk01IDYuMTE4MDFWMTcuODc4TDEwLjg4IDExLjk5OEw1IDYuMTE4MDFaTTE1LjI4NCAxMC40MkwxMy43MDYgMTJMMTUuMjg0IDEzLjU3N0wxOC4wMDggMTJMMTUuMjgzIDEwLjQyMUwxNS4yODQgMTAuNDJaTTcuNzk0IDYuMDg0MDFMMTIuMjk0IDEwLjU4NEwxMy40OTMgOS4zODQwMUw3Ljc5NCA2LjA4NDAxWiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==" alt="PlayStore"><span>Download app</span></button>
+        </form>
+      </div>
       <div class="left-side">
         <img src="logo1000x1000.png" alt="Burrpy Logo" class="logo" />
-      </div>
-      <div class="right-side">
-        <h1>Coming Soon</h1>
-        <p>The Best Home Cooked Meals at Your Doorstep</p>
       </div>
     </div>
     <footer>
