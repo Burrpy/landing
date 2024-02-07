@@ -38,6 +38,16 @@
         margin-top: 20px; /* Add space between the container and the footer */
       }
 
+      .container-reverse {
+        flex-direction: row-reverse;
+        background-color: #048096;
+      }
+
+      .container-reverse .right-side h1,
+      .container-reverse .right-side p {
+        color: #fff;
+      }
+
       .blue-text {
         color: #048096;
         font-weight: 700;
@@ -168,7 +178,8 @@
           max-width: 90vw;
         }
 
-        .right-side h1 {
+        .right-side h1,
+        .right-side p {
           text-align: center;
         }
 
@@ -224,6 +235,24 @@
       </div>
       <div class="left-side">
         <img src="logo1000x1000.png" alt="Burrpy Logo" class="logo" />
+      </div>
+    </div>
+    <div class="container container-reverse">
+      <div class="right-side">
+        <h1>Diverse Cuisine Delivered on Time</h1>
+        <p>Timely delivery of home made meals so that you don't miss your home</p>
+      </div>
+      <div class="left-side">
+        <img src="delivery500x500.png" alt="Burrpy Logo" class="logo" />
+      </div>
+    </div>
+    <div class="container">
+      <div class="right-side">
+        <h1>Choose your Meals</h1>
+        <p>Choose the type of Meals you want everyday and Subscribe instantly!</p>
+      </div>
+      <div class="left-side">
+        <img src="basket500x500.png" alt="Burrpy Logo" class="logo" />
       </div>
     </div>
     <footer>
