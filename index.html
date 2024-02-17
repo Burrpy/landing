@@ -115,7 +115,8 @@
         padding: 0 1em 0 0;
       }
 
-      footer {
+      .footer {
+        margin: auto;
         max-width: 1200px;
         width: 80%;
         box-shadow: 0 4px 8px 0 rgb(4, 128, 150, 0.5);
@@ -130,7 +131,7 @@
         justify-content: space-around;
       }
 
-      footer ul {
+      .footer ul {
         list-style-type: none;
         padding: 0;
         margin: 0;
@@ -142,7 +143,7 @@
         height: fit-content;
       }
 
-      footer li {
+      .footer li {
         padding: 5px;
         margin: 0;
         height: fit-content;
@@ -150,13 +151,13 @@
         width: 100%;
       }
 
-      footer a {
+      .footer a {
         color: #048096;
         text-decoration: none;
         transition: 1s ease-in-out;
       }
 
-      footer .address {
+      .footer .address {
         margin-top: 1%;
         text-align: left;
       }
@@ -165,7 +166,7 @@
         width: inherit;
       }
 
-      footer a:hover {
+      .footer a:hover {
         color: #048096;
         text-decoration: underline;
       }
@@ -193,30 +194,30 @@
           text-align: center;
         }
 
-        footer {
+        .footer {
           max-width: 80vw;
-          flex-direction: column-reverse;
+          flex-direction: column;
         }
 
-        footer .address{
+        .footer .address {
           width: 100%;
         }
 
-        footer ul{
+        .footer ul {
           width: 100%;
         }
       }
 
       @media (max-width: 400px) {
-        footer {
-          flex-direction: column-reverse;
+        .footer {
+          flex-direction: column;
         }
 
-        footer .address{
+        .footer .address {
           width: 100%;
         }
 
-        footer ul{
+        .footer ul {
           width: 100%;
         }
       }
@@ -227,11 +228,18 @@
       <div class="right-side">
         <h1>We are live</h1>
         <p>The Best Home Cooked Meals at Your Doorstep</p>
-          <a style="text-decoration: inherit; color: inherit;" href="https://play.google.com/store/apps/details?id=com.burrpy.mobileApp" target="_blank">
-            <button type="submit" class="download-button">
-              <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQgMS43MzQwMUM0LjE3NTk3IDEuNzM0MTQgNC4zNDg3OSAxLjc4MDcxIDQuNTAxIDEuODY5MDFMMjAuNTA1IDExLjEzNUMyMC42NTY1IDExLjIyMjkgMjAuNzgyMyAxMS4zNDkxIDIwLjg2OTggMTEuNTAwOUMyMC45NTcyIDExLjY1MjcgMjEuMDAzMiAxMS44MjQ4IDIxLjAwMzIgMTJDMjEuMDAzMiAxMi4xNzUyIDIwLjk1NzIgMTIuMzQ3MyAyMC44Njk4IDEyLjQ5OTFDMjAuNzgyMyAxMi42NTA5IDIwLjY1NjUgMTIuNzc3MSAyMC41MDUgMTIuODY1TDQuNTAxIDIyLjEzMUM0LjM0OTAzIDIyLjIxOSA0LjE3NjU3IDIyLjI2NTQgNC4wMDA5OCAyMi4yNjU2QzMuODI1MzggMjIuMjY1NyAzLjY1Mjg0IDIyLjIxOTcgMy41MDA2OSAyMi4xMzJDMy4zNDg1NSAyMi4wNDQzIDMuMjIyMTggMjEuOTE4MSAzLjEzNDI5IDIxLjc2NjFDMy4wNDYzOSAyMS42MTQxIDMuMDAwMDggMjEuNDQxNiAzIDIxLjI2NlYyLjczNDAxQzMgMi40Njg3OSAzLjEwNTM2IDIuMjE0NDQgMy4yOTI4OSAyLjAyNjlDMy40ODA0MyAxLjgzOTM3IDMuNzM0NzggMS43MzQwMSA0IDEuNzM0MDFaTTEyLjI5MiAxMy40MTRMNy43OTQgMTcuOTEyTDEzLjQ5MyAxNC42MTNMMTIuMjkzIDEzLjQxM0wxMi4yOTIgMTMuNDE0Wk01IDYuMTE4MDFWMTcuODc4TDEwLjg4IDExLjk5OEw1IDYuMTE4MDFaTTE1LjI4NCAxMC40MkwxMy43MDYgMTJMMTUuMjg0IDEzLjU3N0wxOC4wMDggMTJMMTUuMjgzIDEwLjQyMUwxNS4yODQgMTAuNDJaTTcuNzk0IDYuMDg0MDFMMTIuMjk0IDEwLjU4NEwxMy40OTMgOS4zODQwMUw3Ljc5NCA2LjA4NDAxWiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==" alt="PlayStore"><span>Download app</span>
-            </button>
-          </a>
+        <a
+          style="text-decoration: inherit; color: inherit"
+          href="https://play.google.com/store/apps/details?id=com.burrpy.mobileApp"
+          target="_blank"
+        >
+          <button type="submit" class="download-button">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQgMS43MzQwMUM0LjE3NTk3IDEuNzM0MTQgNC4zNDg3OSAxLjc4MDcxIDQuNTAxIDEuODY5MDFMMjAuNTA1IDExLjEzNUMyMC42NTY1IDExLjIyMjkgMjAuNzgyMyAxMS4zNDkxIDIwLjg2OTggMTEuNTAwOUMyMC45NTcyIDExLjY1MjcgMjEuMDAzMiAxMS44MjQ4IDIxLjAwMzIgMTJDMjEuMDAzMiAxMi4xNzUyIDIwLjk1NzIgMTIuMzQ3MyAyMC44Njk4IDEyLjQ5OTFDMjAuNzgyMyAxMi42NTA5IDIwLjY1NjUgMTIuNzc3MSAyMC41MDUgMTIuODY1TDQuNTAxIDIyLjEzMUM0LjM0OTAzIDIyLjIxOSA0LjE3NjU3IDIyLjI2NTQgNC4wMDA5OCAyMi4yNjU2QzMuODI1MzggMjIuMjY1NyAzLjY1Mjg0IDIyLjIxOTcgMy41MDA2OSAyMi4xMzJDMy4zNDg1NSAyMi4wNDQzIDMuMjIyMTggMjEuOTE4MSAzLjEzNDI5IDIxLjc2NjFDMy4wNDYzOSAyMS42MTQxIDMuMDAwMDggMjEuNDQxNiAzIDIxLjI2NlYyLjczNDAxQzMgMi40Njg3OSAzLjEwNTM2IDIuMjE0NDQgMy4yOTI4OSAyLjAyNjlDMy40ODA0MyAxLjgzOTM3IDMuNzM0NzggMS43MzQwMSA0IDEuNzM0MDFaTTEyLjI5MiAxMy40MTRMNy43OTQgMTcuOTEyTDEzLjQ5MyAxNC42MTNMMTIuMjkzIDEzLjQxM0wxMi4yOTIgMTMuNDE0Wk01IDYuMTE4MDFWMTcuODc4TDEwLjg4IDExLjk5OEw1IDYuMTE4MDFaTTE1LjI4NCAxMC40MkwxMy43MDYgMTJMMTUuMjg0IDEzLjU3N0wxOC4wMDggMTJMMTUuMjgzIDEwLjQyMUwxNS4yODQgMTAuNDJaTTcuNzk0IDYuMDg0MDFMMTIuMjk0IDEwLjU4NEwxMy40OTMgOS4zODQwMUw3Ljc5NCA2LjA4NDAxWiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg=="
+              alt="PlayStore"
+            /><span>Download app</span>
+          </button>
+        </a>
       </div>
       <div class="left-side">
         <img src="logo1000x1000.png" alt="Burrpy Logo" class="logo" />
@@ -240,7 +248,9 @@
     <div class="container container-reverse">
       <div class="right-side">
         <h1>Diverse Cuisine Delivered on Time</h1>
-        <p>Timely delivery of home made meals so that you don't miss your home</p>
+        <p>
+          Timely delivery of home made meals so that you don't miss your home
+        </p>
       </div>
       <div class="left-side">
         <img src="delivery500x500.png" alt="Burrpy Logo" class="logo" />
@@ -249,26 +259,38 @@
     <div class="container">
       <div class="right-side">
         <h1>Choose your Meals</h1>
-        <p>Choose the type of Meals you want everyday and Subscribe instantly!</p>
+        <p>
+          Choose the type of Meals you want everyday and Subscribe instantly!
+        </p>
       </div>
       <div class="left-side">
         <img src="basket500x500.png" alt="Burrpy Logo" class="logo" />
       </div>
     </div>
     <footer>
-      <p class="address footer-section">
-        <span class="blue-text">Address: <br /></span>26, Central Road,
-        <br />Jadavpur, <br />Kolkata - 700032 <br />
-      </p>
+      <div class="footer">
         <p class="address footer-section">
-        <span class="blue-text">Contact: <br /></span>+91 79801 20665<br />+91 79800 05728
+          <span class="blue-text">Address: <br /></span>26, Central Road,
+          <br />Jadavpur, <br />Kolkata - 700032 <br />
+        </p>
+        <p class="address footer-section">
+          <span class="blue-text">Contact: <br /></span>+91 79801 20665<br />+91
+          79800 05728
+        </p>
+        <ul class="footer-section">
+          <li><a href="/tnc.html" target="_blank">Terms and Conditions</a></li>
+          <li>
+            <a href="/privacy-policy.html" target="_blank">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="/refund-policy.html" target="_blank">Refund Policy</a>
+          </li>
+          <li><a href="/pricing.html" target="_blank">Pricing</a></li>
+        </ul>
+      </div>
+      <p class="footer-section" style="width: 100%">
+        Copyright© 2024 Mentro Technologies Pvt Ltd. All rights reserved.
       </p>
-      <ul class="footer-section">
-        <li><a href="/tnc.html" target="_blank">Terms and Conditions</a></li>
-        <li><a href="/privacy-policy.html" target="_blank">Privacy Policy</a></li>
-        <li><a href="/refund-policy.html" target="_blank">Refund Policy</a></li>
-        <li><a href="/pricing.html" target="_blank">Pricing</a></li>
-      </ul>
     </footer>
   </body>
 </html>
